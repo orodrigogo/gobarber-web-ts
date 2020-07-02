@@ -75,6 +75,7 @@ O backend foi desenvolvido em **NodeJs**. Para banco de dados, foi utilizado o *
 
 
 - [x] Utilização da biblioteca [Unform](https://unform.dev/) para lidar com os dados de formulários;
+- [x] Utilização do [Yup](https://github.com/jquense/yup) para validação de dados;
 
 
 
