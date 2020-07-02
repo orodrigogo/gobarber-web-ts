@@ -1,44 +1,83 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+  <img src="logo.svg">
+</div>
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `yarn start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Sobre:
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `yarn test`
+O **GoBarber** é uma plataforma WEB e MOBILE para agendamentos de serviços de barbearia.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+Você está no repostório da plataforma **Web** do **GoBarber** que é voltado para o prestador de serviço gerenciar seus agendamentos, atendimentos e clientes.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Recursos da Plataforma:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+:lock: **Recuperação de senha**
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [x] Permite que um usuário consiga recuperar a senha informando o e-mail cadastrado;
+- [x] A API envia para o usuário um e-mail con instruções de recuperação de senha;
+- [x] A API envia um link com token por e-mail para resetar a senha e por segurança o token enviado expira em 2h;
+- [x] Cadastro e autenticação de usuários com geração de JwToken;
+- [x] Autenticação de usuários com JwToken;
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+:busts_in_silhouette: **Atualização de perfil de usuário**
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [x] Permite usuário cadastrar-se e atualizar seu perfil (incluindo imagem de avatar);
+- [x] Validação de e-mails no cadastro, não é possível cadastrar dois usuários com mesmo e-mail;
+- [x] Para atualizar a senha, o usuário deve informar a senha antiga e a nova senha;
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
+:computer: **Painel do Prestador de serviços (Barbeiro)**
+
+
+- [x] Lista os agendamentos do prestador de serviços de um dia específico;
+- [x] O prestador recebe uma notificação sempre que houver um novo agendamento;
+- [x] O prestador pode visualizar as notificações não lidas;
+- [x] A notificação possui estado de lida ou não-lida para que o prestador de serviços consiga gerenciar suas notificações;
+- [x] Os agendamentos do prestador no dia também são armazenados em cache para acelerar o carregamento;
+- [x] As notificações do prestador de serviço são armazenadas no MongoDB;
+- [x] As notificações do prestador de serviço são enviadas em tempo real utilizando Socket.io;
+
+
+
+:date: **Agendamento de serviços**
+
+
+- [x] O usuário pode listar todos os prestadores de serviços cadastrado;
+- [x] O usuário pode listar os dias de um mês com pelo meos um horário disponível de um prestador de serviço;
+- [x] O usuário pode listar os horários disponíveis em um dia específico de um prestador;
+- [x] O usuário deve poder realizar um novo agendamento com um prestador;
+- [x] Por padrão, cada agendamento possui duração de 1h;
+- [x] Os agendamentos estão disponíveis das 8h00 às 18h00 (Primeiro às 8h, último às 17h);
+- [x] Os usuário não pode agendar um serviços em uma data ou horário que já passou;
+- [x] O usuário não pode agendar serviços consigo mesmo;
+- [x] A listagem de prestadores é armazenada em cache para acelerar o carregamento;
+
+
+
+### Banco de Dados e estratégias de armazenamento:
+
+
+Para banco de dados, foi utilizado o **Postgres** para armazenar os dados que envolvem relacionamentos da regra de negócio da aplicação, **MongoDB** para armazenar as notificações e **Redis** para lidar com filas de processamentos em segundo plano.
+
+
+
+### Ferramentas, Técnicas e Bibliotecas da API:
+
+
+
+- [x] Utilização da biblioteca [Unform](https://unform.dev/) para lidar com os dados de formulários;
+
+
+
+<div align="center">
+  <small>Rodrigo Gonçalves Santana - 2020</small>
+</div>
