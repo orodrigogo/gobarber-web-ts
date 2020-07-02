@@ -66,7 +66,7 @@ Você está no repostório da plataforma **Web** do **GoBarber** que é voltado 
 ### Banco de Dados e estratégias de armazenamento:
 
 
-Para banco de dados, foi utilizado o **Postgres** para armazenar os dados que envolvem relacionamentos da regra de negócio da aplicação, **MongoDB** para armazenar as notificações e **Redis** para lidar com filas de processamentos em segundo plano.
+O backend foi desenvolvido em **NodeJs**. Para banco de dados, foi utilizado o **Postgres** para armazenar os dados que envolvem relacionamentos da regra de negócio da aplicação, **MongoDB** para armazenar as notificações e **Redis** para lidar com filas de processamentos em segundo plano.
 
 
 
