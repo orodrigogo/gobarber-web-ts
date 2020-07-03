@@ -9,7 +9,7 @@ import Dashboard from '../pages/Dashboard';
 
 const Routes: React.FC = () => (
   <Switch>
-    <Route path="/" component={SignIn} />
+    <Route path="/" exact component={SignIn} />
     <Route path="/signup" exact component={SignUp} />
 
     <Route path="/dashboard" exact component={Dashboard} isPrivate />
