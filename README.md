@@ -77,6 +77,7 @@ O backend foi desenvolvido em **NodeJs**. Para banco de dados, foi utilizado o *
 - [x] Utilização da biblioteca [Unform](https://unform.dev/) para lidar com os dados de formulários;
 - [x] Utilização do [Yup](https://github.com/jquense/yup) para validação de dados;
 - [x] Utilização do Context API do React para compartilhar estados com a aplicação;
+- [x] Utilização do [react-spring](https://www.react-spring.io/) para animação das mensagens toast;
 
 
 

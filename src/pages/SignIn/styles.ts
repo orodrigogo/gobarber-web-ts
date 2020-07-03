@@ -48,11 +48,11 @@ export const Content = styled.div`
     text-decoration: none;
     transition: color 0.2s;
 
-    display: block;
+    display: flex;
     align-items: center;
 
     svg {
-      margin-right: 16px;
+      margin-right: 10px;
     }
 
     &:hover {
