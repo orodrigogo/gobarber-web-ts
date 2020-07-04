@@ -21,6 +21,8 @@ const icons = {
   success: <FiCheckCircle size={24} />,
 };
 
+// Number(!!message.description) => converte para booleano 1 ou 0 para evitar error no html que não reconhece booleano.
+
 const Toast: React.FC<IToastProps> = ({ message, style }) => {
   const { removeToast } = useToast();
 
@@ -38,7 +40,7 @@ const Toast: React.FC<IToastProps> = ({ message, style }) => {
   return (
     <Container
       type={message.type}
-      hasDescription={!!message.description}
+      hasDescription={Number(!!message.description)}
       style={style}
     >
       {icons[message.type || 'info']}
