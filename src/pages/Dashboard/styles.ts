@@ -137,7 +137,8 @@ export const NextAppointment = styled.div`
       margin-left: auto;
       display: flex;
       align-items: center;
-      color: #999591;
+      color: #f4e4e8;
+      width: 70px;
 
       svg {
         color: #ff9000;
